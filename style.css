@@ -1,0 +1,118 @@
+
+body 
+	{
+	max-width: 960px;
+	margin-top: 90px;
+	margin: auto;
+	background-image: url("img/background.jpeg");
+	background-repeat: no-repeat;
+	}
+
+header
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-image: url("img/companylogoBG.jpg");
+	background-position: 0px;
+	background-size: 100%, auto,  cover;
+	text-align: center;
+	color: #FFFFFF;
+	text-shadow: -.03em -.03em 0 #000, .03em -.03em 0 #000, -.03em .03em 0 #000, .03em .03em 0 #000;
+	font-family: "Berlin Sans FB", "Times New Roman";
+	font-size: 5em;
+	font-weight: 450;
+}
+
+li a:hover
+{
+    background-color: #000000;
+}
+
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #707070;
+    max-width: 100%;
+    text-align: center;
+    border: 0.03em solid #FFFFFF;
+}
+
+li 
+{
+    display: inline;
+}
+
+li a 
+{
+    display: inline-block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2em;
+    font-family: "Arial", "Times New Roman";
+}
+
+
+
+
+p
+{
+	font-family: "Arial", "Times new roman";
+	font-size: 5em;
+	background-color: #2699FB;
+	text-align: center;
+	color: #FFFFFF;
+	margin: 0;
+}
+
+img 
+{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+footer
+{
+    border:0.03em solid #FFFFFF;
+    background-color: #000000;
+
+    padding: 0.03em;
+    text-align: center;
+    color: white;
+    font-family: "Arial", "Times new roman";
+    font-size: 2em;
+}
+
+span
+{
+	display: block;
+}
+
+@media only screen and (max-width:360px)
+{
+	img
+	{
+		max-width: 100%;
+	}
+
+	.d-none
+	{
+		display: none;
+	}
+
+
+
+}
+
+@media only screen and (max-width:360px) and (min-width: 960px)
+{
+
+
+
+
+}
