@@ -1,0 +1,193 @@
+
+body 
+	{
+	max-width: 960px;
+	margin-top: 90px;
+	margin: auto;
+	background-image: url("img/background.jpeg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	}
+
+header
+{
+	padding: 50px;
+	background-image: url("img/companylogoBG.jpg");
+	background-position: 0px;
+	background-size: 100%, auto,  cover;
+	text-align: center;
+	color: #FFFFFF;
+	text-shadow: -.03em -.03em 0 #000, .03em -.03em 0 #000, -.03em .03em 0 #000, .03em .03em 0 #000;
+	font-family: "Berlin Sans FB", "Times New Roman";
+	font-size: 5em;
+	font-weight: 450;
+	font-style: none;
+	text-decoration: none;
+}
+
+a
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+li a:hover
+{
+    background-color: #000000;
+}
+
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #707070;
+    text-align: center;
+    max-width: 100%;
+    border: 0.03em solid #FFFFFF;
+}
+
+li 
+{
+    display: inline;
+}
+
+li a 
+{
+    display: inline-block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2em;
+    font-family: "Arial", "Times New Roman";
+}
+
+p
+{
+	font-family: "Arial", "Times new roman";
+	font-size: 5em;
+	background-color: #2699FB;
+	text-align: center;
+	color: #FFFFFF;
+	margin: 0;
+	padding:10px;
+}
+
+img 
+{
+	display: block;
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+	max-height: 400px;
+	width: 100%;
+}
+
+footer
+{
+    border:0.03em solid #FFFFFF;
+    background-color: #000000;
+    padding: 0.03em;
+    text-align: center;
+    color: white;
+    font-family: "Arial", "Times new roman";
+    font-size: 2em;
+}
+
+span
+{
+	display: block;
+}
+
+@media only screen and (max-width:360px)
+{
+	img
+	{
+		max-height: 150px;
+		padding: 1%;
+	}
+
+	.d-none
+	{
+		display: none;
+	}
+
+	p
+	{
+		font-size: 1.5em;
+	}
+
+	body
+	{
+		background-image: none;
+	}
+
+	footer
+	{
+		font-size: 1em;
+		border: none;
+		padding: 1em;
+
+	}
+
+	header
+	{
+		text-shadow: none;
+		font-size: 2em;
+		padding: 20px;
+		background-size: 360px, auto, cover;
+	}
+
+}
+
+@media only screen and (min-width:361px) and (max-width: 960px)
+{
+
+	header
+	{
+		padding: 30px;
+		font-size: 3em;
+	}
+
+	li a
+	{
+		font-size: 1em;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	ul
+	{
+		padding: 3px;
+		border: 1px solid #FFFFFF;
+	}
+
+
+	.d-tablet
+	{
+		display: none;
+	}
+
+	.tablet
+	{
+		float: left;
+		border: 4px solid  #FFFFFF;
+		max-width:calc(50% - 8px); 
+		height: 300px;
+		min-height: 100px;
+	}
+
+	p
+	{
+		font-size: 3em;
+	}
+
+	footer
+	{
+		font-size: 1em;
+		border: none;
+		padding: 7px;
+	}
+}
