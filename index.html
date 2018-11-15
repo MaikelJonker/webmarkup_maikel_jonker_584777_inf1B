@@ -5,28 +5,43 @@
 	<meta name="description" content="Webmarkup assessment">
 	<meta name="author" content="Maikel Jonker">
     <title>Company name</title>
-    <link rel="icon" type="image/jpg" href="img/favicon.jpg">
-    <link rel="stylesheet" type="text/css" href="styleindex.css">
+    <link rel="icon" type="image/jpg" href="fonts/favicon.jpg">
+    <link rel="stylesheet" type="text/css" href="css/styleindex.css">
 </head>
-<header title= "Go to HomePage" alt="sparkles!"><a href= "index.html">COMPANY NAME</a></header>
+<header title="Go to HomePage" alt="sparkles!"><a href="index.html">COMPANY NAME</a></header>
 <body>
-	<ul>
+
+	<container class="fullscreen-bg">
+    <video loop muted autoplay poster="movie/background.mp4" class="fullscreen-bg__video">
+        <source src="movie/background.mp4" type="video/mp4">
+    </video>
+	</container>
+
+	<ul id="desktop">
  		<li><a href="Product.html">PRODUCTS</a></li>
  		<li><a href="Blog.html">BLOG</a></li>
  		<li><a href="Contact.html">CONTACT</a></li>
 	</ul>
-
-
-	<p>WE ARE <span>ENTERTAINMENT</span></p>
-	<img class= "tablet" src= "img/product3.jpg" title="We are entertainment" alt= "Luigi, Mario and Yoshi">
-	<p class="d-none d-tablet">MOBILE <span>GAMES</span></p>
-	<img class= "tablet" src= "img/product8.jpg" title="Mobile games" alt= "Phone game">
-	<p class="d-none d-tablet">BOARD <span>GAMES</span></p>
-	<img class= "d-tablet" src= "img/product6.jpg" title="Board games" alt= "Board game">
-	<p class="d-none">CONSOLE <span>GAMES</span></p>
-	<img src= "img/product9.jpg" title="Console games" alt= "Game controller">
-
+	
+	<container>
+		<span id="menu-button"><img src="fonts/baseline-menu-24px.svg"></span>
+			<ul id="mobile">
+ 				<li><a href="Product.html">PRODUCTS</a></li>
+ 				<li><a href="Blog.html">BLOG</a></li>
+ 				<li><a href="Contact.html">CONTACT</a></li>
+			</ul>		
+	</container>
+	
+	<p>WE ARE <span class="break-line">ENTERTAINMENT</span></p>
+	<img class="tablet" src="img/product3.jpg" title="We are entertainment" alt="Luigi, Mario and Yoshi">
+	<p class="d-none d-tablet">MOBILE <span class="break-line">GAMES</span></p>
+	<img class="tablet" src="img/product8.jpg" title="Mobile games" alt="Phone game">
+	<p class="d-none d-tablet">BOARD <span class="break-line">GAMES</span></p>
+	<img class="d-tablet" src="img/product6.jpg" title="Board games" alt="Board game">
+	<p class="d-none">CONSOLE <span class="break-line">GAMES</span></p>
+	<img src="img/product9.jpg" title="Console games" alt="Game controller">
 </body>
 
-<footer>2018 - Maikel Jonker - Inholland </footer>
+<footer>© 2018 - Maikel Jonker - Inholland</footer>
+
 </html>

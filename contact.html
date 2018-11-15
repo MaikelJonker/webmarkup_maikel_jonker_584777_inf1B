@@ -1,42 +1,80 @@
-COMPANY NAME
-Home
-Product
-Contact
-More information
-<form action="nowhere.php" method="post">
-	<fieldset>
-		<label >Select topic</label>
-		<select>
-			<option value="general">General inquiries</option>
-			<option value="press">Press relations</option>
-			<option value="recruitement">Recruitement</option>
-		</select>
-	</fieldset>
-	<fieldset class="contactFormFieldset">
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Webmarkup assessment">
+	<meta name="author" content="Maikel Jonker">
+    <title>Company name</title>
+    <link rel="icon" type="image/jpg" href="fonts/favicon.jpg">
+    <link rel="stylesheet" type="text/css" href="css/stylecontact.css">
+</head>
+<header title= "Go to HomePage" alt="sparkles!" ><a href= "index.html">COMPANY NAME</a></header>
+<body>
+
+	<container class="fullscreen-bg">
+    <video loop muted autoplay poster="movie/background.mp4" class="fullscreen-bg__video">
+        <source src="movie/background.mp4" type="video/mp4">
+    </video>
+	</container>
+
+
+	<ul id="desktop">
+ 		<li><a href="Product.html">PRODUCTS</a></li>
+ 		<li><a href="Blog.html">BLOG</a></li>
+ 		<li><a href="Contact.html">CONTACT</a></li>
+	</ul>
+
+	<container>
+		<span id="menu-button"><img src="fonts/baseline-menu-24px.svg"></span>	
+			<ul id="mobile">
+ 				<li><a href="Product.html">PRODUCTS</a></li>
+ 				<li><a href="Blog.html">BLOG</a></li>
+ 				<li><a href="Contact.html">CONTACT</a></li>
+			</ul>		
+	</container>
+
+	<p>CONTACT</p>
+
+	<form action="nowhere.php" method="post">
+		<h4>More information</h4>
+		<fieldset>
+			<label >Select topic</label>
+			<select>
+				<option value="general">General inquiries</option>
+				<option value="press">Press relations</option>
+				<option value="recruitement">Recruitement</option>
+			</select>
+		</fieldset>
+		<fieldset class="contactFormFieldset">
 		<input
 				type="text"
 				name="contactFormName"
 				placeholder="Your name.."
-		/>
-	</fieldset>
-	<fieldset class="contactFormFieldset">
-		<input
+			/>
+		</fieldset>
+		<fieldset class="contactFormFieldset">
+			<input
 				type="email"
 				name="email"
 				placeholder="Your email.."
-		/>
-	</fieldset>
-	<fieldset>
+			/>
+		</fieldset>
+		<fieldset>
 		<textarea
 				rows="7"
 				cols="40"
 				name="message"
 				placeholder="Write something.."
 		></textarea>
-	</fieldset>
-	<input
+		</fieldset>
+		<input
 			type="submit"
 			value="Submit"
-	/>
-</form>
-2018 - Student name - Inholland 
+		/>
+	</form>
+</body>
+
+
+<footer>© 2018 - Maikel Jonker - Inholland</footer>
+
+</html>
