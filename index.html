@@ -1,47 +1,58 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="description" content="Webmarkup assessment">
-	<meta name="author" content="Maikel Jonker">
-    <title>Company name</title>
-    <link rel="icon" type="image/jpg" href="fonts/favicon.jpg">
-    <link rel="stylesheet" type="text/css" href="css/styleindex.css">
-</head>
-<header title="Go to HomePage" alt="sparkles!"><a href="index.html">COMPANY NAME</a></header>
-<body>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="entertainment, mobile games, board games, console games, games, homepage, controller, home">
+		<meta name="description" content="Webmarkup assessment">
+		<meta name="author" content="Maikel Jonker">
+	    <title>Company name</title>
+	    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+	    <link rel="stylesheet" type="text/css" href="css/styleindex.css">
+	</head>
 
-	<container class="fullscreen-bg">
-    <video loop muted autoplay poster="movie/background.mp4" class="fullscreen-bg__video">
-        <source src="movie/background.mp4" type="video/mp4">
-    </video>
-	</container>
+	<body>
+		<header title="Go to HomePage"><a href="index.html">COMPANY NAME</a></header>
+		<!-- start video background -->
+		<main class="fullscreen-bg">
+	    	<video loop muted autoplay poster="movie/background.mp4" class="fullscreen-bg__video">
+	        	<source src="movie/background.mp4" type="video/mp4">
+	    	</video>
+		</main>
+		<!-- end video background -->
 
-	<ul id="desktop">
- 		<li><a href="Product.html">PRODUCTS</a></li>
- 		<li><a href="Blog.html">BLOG</a></li>
- 		<li><a href="Contact.html">CONTACT</a></li>
-	</ul>
-	
-	<container>
-		<span id="menu-button"><img src="fonts/baseline-menu-24px.svg"></span>
-			<ul id="mobile">
- 				<li><a href="Product.html">PRODUCTS</a></li>
- 				<li><a href="Blog.html">BLOG</a></li>
- 				<li><a href="Contact.html">CONTACT</a></li>
-			</ul>		
-	</container>
-	
-	<p>WE ARE <span class="break-line">ENTERTAINMENT</span></p>
-	<img class="tablet" src="img/product3.jpg" title="We are entertainment" alt="Luigi, Mario and Yoshi">
-	<p class="d-none d-tablet">MOBILE <span class="break-line">GAMES</span></p>
-	<img class="tablet" src="img/product8.jpg" title="Mobile games" alt="Phone game">
-	<p class="d-none d-tablet">BOARD <span class="break-line">GAMES</span></p>
-	<img class="d-tablet" src="img/product6.jpg" title="Board games" alt="Board game">
-	<p class="d-none">CONSOLE <span class="break-line">GAMES</span></p>
-	<img src="img/product9.jpg" title="Console games" alt="Game controller">
-</body>
-
-<footer>© 2018 - Maikel Jonker - Inholland</footer>
+		<!-- start desktop navigation menu -->
+		<ul id="desktop">
+	 		<li><a href="product.html">PRODUCTS</a></li>
+	 		<li><a href="http://www.Blogger.com">BLOG</a></li>
+	 		<li><a href="contact.html">CONTACT</a></li>
+		</ul>
+		<!-- end desktop navigation menu -->
+		
+		<!-- start mobile navigation menu -->
+		<nav>
+			<span id="menu-button"><img src="img/baseline-menu-24px.svg" alt="Menu" title="expand"></span>
+				<ul id="mobile">
+	 				<li><a href="product.html">PRODUCTS</a></li>
+	 				<li><a href="http://www.Blogger.com">BLOG</a></li>
+	 				<li><a href="contact.html">CONTACT</a></li>
+				</ul>		
+		</nav>
+		<!-- end mobile navigation menu -->
+		
+		<!-- start page content -->
+		<section>
+			<h4>WE ARE <span class="break-line">ENTERTAINMENT</span></h4>
+			<img class="tablet" src="img/product3.jpg" title="We are entertainment" alt="Luigi, Mario and Yoshi">
+			<h4 class="d-none d-tablet">MOBILE <span class="break-line">GAMES</span></h4>
+			<img class="tablet" src="img/product8.jpg" title="Mobile games" alt="Phone game">
+			<h4 class="d-none d-tablet">BOARD <span class="break-line">GAMES</span></h4>
+			<img class="d-tablet" src="img/product6.jpg" title="Board games" alt="Board game">
+			<h4 class="d-none">CONSOLE <span class="break-line">GAMES</span></h4>
+			<img src="img/product9.jpg" title="Console games" alt="Game controller">
+		</section>
+		<!-- end page content -->
+		<footer>© 2018 - Maikel Jonker - Inholland</footer>
+	</body>
 
 </html>

@@ -1,4 +1,3 @@
-
 body 
 	{
 	max-width: 960px;
@@ -20,11 +19,11 @@ header
 	text-shadow: -.03em -.03em 0 #000, .03em -.03em 0 #000, -.03em .03em 0 #000, .03em .03em 0 #000;
 	font-family: "Berlin Sans FB", "Times New Roman";
 	font-size: 5em;
-	font-weight: 450;
-	font-style: none;
+	font-weight: 500;
 	text-decoration: none;
 }
 
+/*Video styling*/
 .fullscreen-bg {
     position: fixed;
     top: 0;
@@ -35,14 +34,17 @@ header
     z-index: -100;
 }
 
+/*Video styling*/
 .fullscreen-bg__video {
     position: relative;
     top: 0;
     left: 0;
     width: 100vw;
-    height: auto;
+    height: 100vw;
+    object-fit: cover;
 }
 
+/*Start desktop nav bar*/
 a
 {
 	color: #FFFFFF;
@@ -81,9 +83,11 @@ li a
     font-size: 2em;
     font-family: "Arial", "Times New Roman";
 }
+/*End desktop nav bar*/
 
-p
+h4
 {
+	font-weight: normal;
 	font-family: "Arial", "Times new roman";
 	font-size: 5em;
 	background-color: #2699FB;
@@ -93,6 +97,8 @@ p
 	padding:10px;
 }
 
+
+/*Images styling*/
 img 
 {
 	display: block;
@@ -103,6 +109,7 @@ img
 	width: 100%;
 }
 
+/*footer styling*/
 footer
 {
     border:0.03em solid #FFFFFF;
@@ -114,35 +121,41 @@ footer
     font-size: 2em;
 }
 
+/*Break*/
 span
 {
 	display: block;
 }
 
+/*Do not display mobile specific content*/
 #mobile
 {
 	display: none;
 }
 
+/*Do not display mobile menu button*/
 #menu-button
 {
 	display: none;
 }
 
+/*Mobile specific code under here*/
 @media only screen and (max-width:360px)
 {
-
+	/*Stop displaying the background movie on mobile*/
 	.fullscreen-bg
 	{
 		display: none;
 	}
 
+	/*image styling*/
 	img
 	{
 		max-height: 150px;
 		padding: 1%;
 	}
 
+	/*Start mobile menu*/
 	#menu-button:hover + #mobile
 	{
 		display: block;
@@ -165,23 +178,13 @@ span
 	#menu-button > img
 	{
 		object-fit: fill;
-		height: 1.5em;
+		height: 2em;
 		width: auto;
-	}
-
-	.d-none
-	{
-		display: none;
-	}
-
-	#desktop
-	{
-		display: none;
 	}
 
 	#mobile > ul
 	{
-		font size: 1em;
+		font-size: 1em;
 		text-align: left;
 	}
 
@@ -191,12 +194,26 @@ span
 		text-align: left;
 		display: block;
 	} 
+	/*End mobile menu*/
 
-	p
+	/*Do not display desktop content*/
+	.d-none
+	{
+		display: none;
+	}
+
+	/*do not display desktop/tablet menu*/
+	#desktop
+	{
+		display: none;
+	}
+
+	h4
 	{
 		font-size: 1.5em;
 	}
 
+	/*Remove background image on mobile*/
 	body
 	{
 		background-image: none;
@@ -219,10 +236,11 @@ span
 	}
 
 }
-
+/*Tablet specific code under here*/
 @media only screen and (min-width:361px) and (max-width: 960px)
 {
 
+	/*Stop displaying movie on tablet*/
 	.fullscreen-bg
 	{
 		display: none;
@@ -247,12 +265,13 @@ span
 		border: 1px solid #FFFFFF;
 	}
 
-
+	/*Stop displaying desktop-specific content*/
 	.d-tablet
 	{
 		display: none;
 	}
 
+	/*Image adjustment for tablet*/
 	.tablet
 	{
 		float: left;
@@ -262,7 +281,7 @@ span
 		min-height: 100px;
 	}
 
-	p
+	h4
 	{
 		font-size: 3em;
 	}

@@ -20,9 +20,10 @@ header
 	text-shadow: -.03em -.03em 0 #000, .03em -.03em 0 #000, -.03em .03em 0 #000, .03em .03em 0 #000;
 	font-family: "Berlin Sans FB", "Times New Roman";
 	font-size: 5em;
-	font-weight: 450;
+	font-weight: 500;
 }
 
+/*background movie*/
 .fullscreen-bg {
     position: fixed;
     top: 0;
@@ -37,10 +38,12 @@ header
     position: relative;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
+/*start desktop menu*/
 a
 {
 	color: #FFFFFF;
@@ -79,6 +82,7 @@ li a
     font-size: 2em;
     font-family: "Arial", "Times New Roman";
 }
+/*end desktop menu*/
 
 p
 {
@@ -103,21 +107,25 @@ footer
     font-size: 2em;
 }
 
+/*do not display mobile content*/
 .m-none
 {
 	display: none;
 }
 
+/*do not display mobile nav bar*/
 #mobile
 {
 	display: none;
 }
 
+/*do not display mobile nav button*/
 #menu-button
 {
 	display: none;
 }
 
+/*start textbox styling*/
 h4
 {
 	color: #707070;
@@ -130,45 +138,66 @@ h4
 form
 {
 	background-color: #F5F5F5;
+	border: 1px solid #AAAAAA;
 }
 
 label
 {
 	font-size: 1.5em;
 	color: #707070;
+	font-family: "Arial", "Times new roman";
 }
 
-select 
+select
 {
-
+	font-size: 1.5em;
+	float: right;
+	width: 70%;
+	color: #707070;
 }
 
 fieldset
 {
 	margin: 1.5em;
-	background-color: #FFF;
-	color: #000;
+	background-color: #FFFFFF;
+	color: #000000;
 	margin-left: 5%;
 	margin-right: 5%;
-	padding: 0;
 }
 
 .contactFormFieldset input, textarea
 {
-	box-sizing: 80%;
 	font-size: 1.5em;
+	font-family: "Arial", "Times new roman";
+	width: 100%;
+	border: 0;
+}
+/*end textbox styling*/
+
+/*submit button styling*/
+#submit-button
+{
+	margin: 5%;
+	width: 90%;
+	font-family: "Arial", "Times new roman";
+	color: #FFFFFF;
+	background-color: #2699FB;
+	font-size: 3em;
+	margin-top: 0;
+	border: 1px solid #000000;
 }
 
 
-
+/*mobile specific styling*/
 @media only screen and (max-width:360px)
 {
-
+	/*do not display video background*/
 	.fullscreen-bg
 	{
 		display: none;
 	}
 
+	/*start mobile menu*/
 	#menu-button:hover + #mobile
 	{
 		display: block;
@@ -193,20 +222,15 @@ fieldset
 	#menu-button > img
 	{
 		object-fit: fill;
-		height: 2.5em;
+		height: 2em;
 		width: auto;
 		border: 0;
 		display: inline-block;
 	}
 
-	#desktop
-	{
-		display: none;
-	}
-
 	#mobile > ul
 	{
-		font size: 1em;
+		font-size: 1em;
 		text-align: left;
 	}
 
@@ -217,16 +241,31 @@ fieldset
 		display: block;
 	} 
 
-	.d-none
+	span
+	{
+		height: 32px;
+	}
+	/*end mobile menu*/
+
+	/*do not display desktop specific content*/
+	#desktop
 	{
 		display: none;
 	}
 
+	/*remove desktop tekst*/
+	h4
+	{
+		display: none;
+	}
+
+	/*display mobile menu*/
 	.m-none
 	{
 		display: block;
 	}
 
+	/*remove background image*/
 	body
 	{
 		background-image: none;
@@ -257,18 +296,69 @@ fieldset
 	{
 		clear: both;
 		font-size: 2em;
+		padding: 3px;
 	}
+
+	/*start textbox styling*/
+	.contactFormFieldset input, textarea
+	{
+		font-size: 1em;
+	}
+
+	#submit-button
+	{
+		font-size: 1em;
+		padding: 3px;
+	}
+
+	select
+	{
+		font-size: 1em;
+		float: left;
+		margin-top: 10px;
+		width: 100%;
+	}
+
+	label
+	{
+		font-size: 1em;
+		float: left;
+	}
+
+	fieldset
+	{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-right: 10%;
+		margin-left: 10%;
+	}
+
+	#submit-button
+	{
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	form
+	{
+		padding-top: 40px;
+	}
+	/*end textbox styling*/
 
 }
 
+/*tablet specific styling*/
 @media only screen and (min-width:361px) and (max-width: 960px)
 {
 
+	/*remove background movie*/
 	.fullscreen-bg
 	{
 		display: none;
 	}
 
+	/*remove background image*/
 	body
 	{
 		background-image: none;
@@ -280,6 +370,7 @@ fieldset
 		font-size: 3em;
 	}
 
+	/*start desktop nav bar styling*/
 	li a
 	{
 		font-size: 1em;
@@ -292,12 +383,9 @@ fieldset
 		padding: 3px;
 		border: 1px solid #FFFFFF;
 	}
+	/*end desktop nav bar styling*/
 
-	img
-	{
-		max-width:calc(50% - 10px);
-	}
-
+	/*do not display desktop specific content*/
 	.d-none
 	{
 		display: none;
@@ -310,8 +398,29 @@ fieldset
 		font-size: 1em;
 	}
 
+	/*text styling*/
 	p
 	{
 		font-size: 4em;
 	}
+
+	/*start textbox styling*/
+	span
+	{
+		display: block;
+	}
+
+	select
+	{
+		float: left;
+		width: 100%;
+		margin-top: 15px;
+		margin-bottom: 10px;
+	}
+
+	form
+	{
+		padding-top: 4em;
+	}
+	/*end textbox styling*/
 }

@@ -1,80 +1,90 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="description" content="Webmarkup assessment">
-	<meta name="author" content="Maikel Jonker">
-    <title>Company name</title>
-    <link rel="icon" type="image/jpg" href="fonts/favicon.jpg">
-    <link rel="stylesheet" type="text/css" href="css/stylecontact.css">
-</head>
-<header title= "Go to HomePage" alt="sparkles!" ><a href= "index.html">COMPANY NAME</a></header>
-<body>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="contact, customer support, feedback, requests, aftersales, questions, tips, information">
+		<meta name="description" content="Webmarkup assessment">
+		<meta name="author" content="Maikel Jonker">
+	    <title>Company name</title>
+	    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+	    <link rel="stylesheet" type="text/css" href="css/stylecontact.css">
+	</head>
 
-	<container class="fullscreen-bg">
-    <video loop muted autoplay poster="movie/background.mp4" class="fullscreen-bg__video">
-        <source src="movie/background.mp4" type="video/mp4">
-    </video>
-	</container>
+	<body>
+		<header title= "Go to HomePage"><a href= "index.html">COMPANY NAME</a></header>
 
+		<!-- Start video background -->
+		<main class="fullscreen-bg">
+	    <video loop muted autoplay poster="movie/background.mp4" class="fullscreen-bg__video">
+	        <source src="movie/background.mp4" type="video/mp4">
+	    </video>
+		</main>
+		<!-- End video background -->
 
-	<ul id="desktop">
- 		<li><a href="Product.html">PRODUCTS</a></li>
- 		<li><a href="Blog.html">BLOG</a></li>
- 		<li><a href="Contact.html">CONTACT</a></li>
-	</ul>
+		<!-- Start desktop menu -->
+		<ul id="desktop">
+	 		<li><a href="product.html">PRODUCTS</a></li>
+	 		<li><a href="http://www.Blogger.com">BLOG</a></li>
+	 		<li><a href="contact.html">CONTACT</a></li>
+		</ul>
+		<!-- End desktop menu -->
 
-	<container>
-		<span id="menu-button"><img src="fonts/baseline-menu-24px.svg"></span>	
-			<ul id="mobile">
- 				<li><a href="Product.html">PRODUCTS</a></li>
- 				<li><a href="Blog.html">BLOG</a></li>
- 				<li><a href="Contact.html">CONTACT</a></li>
-			</ul>		
-	</container>
+		<!-- Start mobile menu -->
+		<nav>
+			<span id="menu-button"><img src="img/baseline-menu-24px.svg" alt="Menu" title="expand"></span>
+				<ul id="mobile">
+	 				<li><a href="product.html">PRODUCTS</a></li>
+	 				<li><a href="http://www.Blogger.com">BLOG</a></li>
+	 				<li><a href="contact.html">CONTACT</a></li>
+				</ul>		
+		</nav>
+		<!-- End mobile menu -->
 
-	<p>CONTACT</p>
+		<!-- start Page content -->
+		<p  class="d-none">CONTACT</p>
 
-	<form action="nowhere.php" method="post">
-		<h4>More information</h4>
-		<fieldset>
-			<label >Select topic</label>
-			<select>
-				<option value="general">General inquiries</option>
-				<option value="press">Press relations</option>
-				<option value="recruitement">Recruitement</option>
-			</select>
-		</fieldset>
-		<fieldset class="contactFormFieldset">
-		<input
+		<form action="nowhere.php" method="post">
+			<h4 class="d-none">More information</h4>
+			<fieldset id="topic">
+				<label >Select topic</label>
+				<select>
+					<option value="general">General inquiries</option>
+					<option value="press">Press relations</option>
+					<option value="recruitement">Recruitement</option>
+				</select>
+			</fieldset>
+			<fieldset class="contactFormFieldset">
+			<input
 				type="text"
 				name="contactFormName"
 				placeholder="Your name.."
 			/>
-		</fieldset>
-		<fieldset class="contactFormFieldset">
+			</fieldset>
+			<fieldset class="contactFormFieldset">
 			<input
 				type="email"
 				name="email"
 				placeholder="Your email.."
 			/>
-		</fieldset>
-		<fieldset>
-		<textarea
+			</fieldset>
+			<fieldset>
+			<textarea
 				rows="7"
 				cols="40"
 				name="message"
 				placeholder="Write something.."
-		></textarea>
-		</fieldset>
-		<input
-			type="submit"
-			value="Submit"
-		/>
-	</form>
-</body>
+			></textarea>
+			</fieldset>
+			<input
+				id="submit-button"
+				type="submit"
+				value="Submit"
+			/>
+			<!-- End page content -->
 
+		</form>
 
-<footer>© 2018 - Maikel Jonker - Inholland</footer>
-
+		<footer>© 2018 - Maikel Jonker - Inholland</footer>
+	</body>
 </html>
